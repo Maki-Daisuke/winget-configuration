@@ -269,6 +269,14 @@ properties:
         id: OBSProject.OBSStudio
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install QuickLook
+        allowPrerelease: true
+      settings:
+        id: QL-Win.quicklook
+        source: winget
+
     # Registry Setting
     - resource: PSDscResources/Registry
       directives:
