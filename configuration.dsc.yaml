@@ -145,6 +145,14 @@ properties:
         id: GoLang.Go
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Python Programming Language
+        allowPrerelease: true
+      settings:
+        id: Python.Python.3.11
+        source: winget
+
     # Microsoft Apps
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
