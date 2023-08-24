@@ -208,7 +208,7 @@ properties:
         description: Install Google Drive
         allowPrerelease: true
       settings:
-        id: Google.Drive
+        id: Google.GoogleDrive
         source: winget
 
     # Communication
