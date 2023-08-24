@@ -282,7 +282,7 @@ properties:
         description: Install QuickLook
         allowPrerelease: true
       settings:
-        id: QL-Win.quicklook
+        id: QL-Win.QuickLook
         source: winget
 
     # Registry Setting
