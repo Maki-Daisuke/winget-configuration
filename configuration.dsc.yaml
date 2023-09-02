@@ -239,10 +239,10 @@ properties:
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
-        description: Install 7zip
+        description: Install 7-Zip ZS
         allowPrerelease: true
       settings:
-        id: 7zip.7zip
+        id: mcmilk.7zip-zstd
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
