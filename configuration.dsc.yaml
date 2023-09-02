@@ -80,10 +80,10 @@ properties:
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
-        description: Install Windows Terminal
+        description: Install Windows Terminal Preview
         allowPrerelease: true
       settings:
-        id: Microsoft.WindowsTerminal
+        id: Microsoft.WindowsTerminal.Preview
         source: winget
 
     # SCM
