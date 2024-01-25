@@ -52,13 +52,13 @@ properties:
         FontName: CaskaydiaCove NF Regular
         FontFile: https://github.com/ryanoasis/nerd-fonts/raw/2.1.0/patched-fonts/CascadiaCode/complete/Caskaydia%20Cove%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf
 
-    # - resource: Microsoft.WinGet.DSC/WinGetPackage
-    #   directives:
-    #     description: Install PowerShell 7
-    #     allowPrerelease: true
-    #   settings:
-    #     id: Microsoft.PowerShell
-    #     source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install PowerShell 7
+        allowPrerelease: true
+      settings:
+        id: Microsoft.PowerShell
+        source: winget
 
     # Web browser
     - resource: Microsoft.WinGet.DSC/WinGetPackage
