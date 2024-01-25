@@ -263,6 +263,14 @@ properties:
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Wondershare Filmora
+        allowPrerelease: true
+      settings:
+        id: Wondershare.Filmora
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install Adobe Acrobat Reader DC (64-bit)
         allowPrerelease: true
       settings:
