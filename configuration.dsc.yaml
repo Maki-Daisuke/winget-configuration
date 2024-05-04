@@ -194,14 +194,6 @@ properties:
         id: Microsoft.OneDrive
         source: winget
 
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      directives:
-        description: Install Skype
-        allowPrerelease: true
-      settings:
-        id: Microsoft.Skype
-        source: winget
-
     # Cloud Storages
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
