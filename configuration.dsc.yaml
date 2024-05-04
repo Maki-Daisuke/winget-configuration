@@ -219,6 +219,14 @@ properties:
       settings:
         id: Discord.Discord
         source: winget
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install LINE
+        allowPrerelease: true
+      settings:
+        id: LINE.LINE
+        source: winget
 
     # Miscs
     - resource: Microsoft.WinGet.DSC/WinGetPackage
