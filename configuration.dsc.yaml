@@ -293,6 +293,14 @@ properties:
         id: QL-Win.QuickLook
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Parsec
+        allowPrerelease: true
+      settings:
+        id: Parsec.Parsec
+        source: winget
+
     # Registry Setting
     - resource: PSDscResources/Registry
       directives:
