@@ -214,14 +214,6 @@ properties:
     # Communication
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
-        description: Install Slack
-        allowPrerelease: true
-      settings:
-        id: SlackTechnologies.Slack
-        source: winget
-
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      directives:
         description: Install Discord
         allowPrerelease: true
       settings:
