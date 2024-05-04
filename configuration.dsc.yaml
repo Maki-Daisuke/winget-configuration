@@ -147,6 +147,14 @@ properties:
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Node.js LTS
+        allowPrerelease: true
+      settings:
+        id: OpenJS.NodeJS.LTS
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install Python Programming Language
         allowPrerelease: true
       settings:
