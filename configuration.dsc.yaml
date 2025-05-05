@@ -136,6 +136,14 @@ properties:
         id: Amazon.AWSCLI
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Glow - Render markdown on the CLI, with pizzazz!
+        allowPrerelease: true
+      settings:
+        id: charmbracelet.glow
+        source: winget
+
     # Programming Languages
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
