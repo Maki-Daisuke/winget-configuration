@@ -2,17 +2,7 @@
 
 Windows 11 をクリーンインストールした直後の環境から、`winget` の構成ファイル（`.dsc.yaml`）を適用して環境構築するまでの手順を記録しておく。
 
-## 1. App Installer（WinGet）のインストール
-
-Windows 初期状態には `winget` が入っていない場合がある。こちらで入手してインストールする: https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer
-
-インストール完了後、次のコマンドで確認できる：
-
-```powershell
-winget --version
-```
-
-## 2. PowerShell 7 のインストール
+## 1. PowerShell 7 のインストール
 
 `winget configure` は PowerShell 7.x 以降が必要。
 こちらで入手してインストールする: https://github.com/PowerShell/PowerShell/releases
@@ -24,6 +14,22 @@ $PSVersionTable.PSVersion
 ```
 
 出力が 7.x.x になっていればOK。
+
+## 2. App Installer（WinGet）のインストール
+
+Windows 初期状態には `winget` が入っていない場合がある。こちらで msixbundle ファイルを取得する: https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer
+
+ファイルをダウンロードしたら PowerShell を管理者権限で起動して、次のコマンドを実行する: 
+
+```powershell
+Add-AppxPackage -Path .\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+```
+
+インストール完了後、次のコマンドで確認できる：
+
+```powershell
+winget --version
+```
 
 ## 3. 必要なDSCモジュールのインストール
 
