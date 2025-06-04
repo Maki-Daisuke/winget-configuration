@@ -300,6 +300,14 @@ properties:
         id: Parsec.Parsec
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install MacroRecorder
+        allowPrerelease: true
+      settings:
+        id: BartelsMedia.MacroRecorder
+        source: winget
+
     # Registry Setting
     - resource: PSDscResources/Registry
       directives:
