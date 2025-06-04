@@ -308,6 +308,14 @@ properties:
         id: BartelsMedia.MacroRecorder
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Tailscale
+        allowPrerelease: true
+      settings:
+        id: Tailscale.Tailscale
+        source: winget
+
     # Registry Setting
     - resource: PSDscResources/Registry
       directives:
