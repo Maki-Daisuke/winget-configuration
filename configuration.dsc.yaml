@@ -12,15 +12,6 @@ properties:
       settings:
         Ensure: Present
 
-    # To eliminate Caps Lock!
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      directives:
-        description: Install SharpKeys
-        allowPrerelease: true
-      settings:
-        id: RandyRants.SharpKeys
-        source: winget
-
     # IME
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
