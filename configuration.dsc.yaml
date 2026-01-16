@@ -135,6 +135,31 @@ properties:
         id: charmbracelet.glow
         source: winget
 
+    # GCP dev
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Google Cloud SDK
+        allowPrerelease: true
+      settings:
+        id: Google.CloudSDK
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Firebase CLI Tools
+        allowPrerelease: true
+      settings:
+        id: Google.FirebaseCLI
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Terraform
+        allowPrerelease: true
+      settings:
+        id: Hashicorp.Terraform
+        source: winget
+
     # Programming Languages
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
