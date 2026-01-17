@@ -135,6 +135,14 @@ properties:
         id: charmbracelet.glow
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: GnuWin32 grep
+        allowPrerelease: true
+      settings:
+        id: GnuWin32.Grep
+        source: winget
+
     # GCP dev
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
