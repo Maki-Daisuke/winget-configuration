@@ -143,6 +143,14 @@ properties:
         id: GnuWin32.Grep
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: ripgrep (rg)
+        allowPrerelease: true
+      settings:
+        id: BurntSushi.ripgrep.MSVC
+        source: winget
+
     # GCP dev
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
