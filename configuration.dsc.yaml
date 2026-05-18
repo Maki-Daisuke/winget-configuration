@@ -357,6 +357,14 @@ properties:
         id: Tailscale.Tailscale
         source: winget
 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Cryptomator
+        allowPrerelease: true
+      settings:
+        id: Cryptomator.Cryptomator
+        source: winget
+
     # Registry Setting
     - resource: PSDscResources/Registry
       directives:
