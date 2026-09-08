@@ -170,6 +170,14 @@ properties:
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Antigravity CLI
+        allowPrerelease: true
+      settings:
+        id: Google.AntigravityCLI
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install Terraform
         allowPrerelease: true
       settings:
